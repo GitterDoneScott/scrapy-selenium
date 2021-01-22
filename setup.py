@@ -11,7 +11,7 @@ try:  # pip >= 10
 except ImportError:  # pip <= 9.0.3
     from pip.download import PipSession
 
-    def get_requirements(source):
+def get_requirements(source):
     """Get the requirements from the given ``source``
 
     Parameters
